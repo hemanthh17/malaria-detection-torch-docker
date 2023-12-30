@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Detector</title>
+</head>
+
+<body>
+    <h1 class="heading"> Malaria Detection with Parasite presence</h1>
+
+    <form action="/predict_malaria" method="post" enctype="multipart/form-data">
+        <h3 class="img-title">Post your Image here</h3>
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <input type="submit" value="Process Image">
+    </form>
+
+</body>
+
+</html>
