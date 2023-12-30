@@ -1,4 +1,4 @@
-## Malaria Detection using Pytorch
+# Malaria Detection using Pytorch
 For this project blood samples with and without parasites have been considered. The overall goal is to make sure we are able to classify whether the person has Malaria or not based on the blood image samples.
 
 ## Model Structure
