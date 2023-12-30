@@ -18,7 +18,11 @@ In order to keep the dependencies uniform, the entire environment was dockerized
 ```
 docker pull docker pull hemanthh17/torchmalaria:latest
 ```
-To use this application the image can be pulled and a new container cna be created at the destination to run the application.
+To use this application the image can be pulled and a new container cna be created at the destination to run the application. **(Not yet uploaded)**
 ```
 docker run --name malariadetection -p 5000 hemanthh17/torchmalaria:latest
+```
+If you want to build the image from scratch
+```
+docker build -t malariatorch .
 ```
