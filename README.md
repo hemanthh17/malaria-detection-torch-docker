@@ -16,7 +16,7 @@ Post training, the model was saved, and a seprate script to define the model and
 ## Dockerizing
 In order to keep the dependencies uniform, the entire environment was dockerized. The image of this can be found in the [Docker Hub](https://hub.docker.com/r/hemanthh17/torchmalaria). 
 ```
-docker pull docker pull hemanthh17/torchmalaria:latest
+docker pull docker pull hemanthh17/torchmalaria:v1.1
 ```
 To use this application the image can be pulled and a new container cna be created at the destination to run the application. 
 ```
@@ -25,4 +25,9 @@ docker run --name malariadetection -p 5000 hemanthh17/torchmalaria:latest
 If you want to build the image from scratch
 ```
 docker build -t malariatorch .
+```
+
+To scout for any vulnerabilities
+```
+docker scout malariatorch -quickview
 ```
